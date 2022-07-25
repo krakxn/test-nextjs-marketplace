@@ -7,11 +7,12 @@ import { NotificationProvider } from "web3uikit"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <MoralisProvider initializeOnMount={false}>
-      <Header />
-      <Component {...pageProps} />
-    </MoralisProvider>
+    <div>
+      <MoralisProvider initializeOnMount={false}>
+        <Header />
+        <Component {...pageProps} />
+      </MoralisProvider>
+    </div>
   );
 }
-
 export default MyApp;
